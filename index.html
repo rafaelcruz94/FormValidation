@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="header">Create Account</h3>
+      <form class="form" id="form">
+        <div class="form-control">
+          <input type="text" name="username" id="username" />
+          <label for="username">Username</label>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <input type="email" name="email" id="email" />
+          <label for="email">Email</label>
+          <small>Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <input class="date" type="date" name="date" id="date" />
+          <label for="date">Date of Birth</label>
+          <small>Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="tel" name="tel" id="phone" />
+          <label for="phone">Phone Number</label>
+          <small>Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <div id="toggle"></div>
+          <input type="password" name="password" id="password" />
+          <label for="password">Password</label>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <input type="password" name="password2" id="password2" />
+          <div id="toggle2"></div>
+          <label for="password2">Confirm Password</label>
+          <small>Error Message</small>
+        </div>
+        <button>Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
